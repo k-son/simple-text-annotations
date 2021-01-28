@@ -1,0 +1,148 @@
+:root {
+  --color-tooltip: #4d88fe;
+  --color-tooltip-text: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.4;
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+/* button reset */
+button {
+  border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* section - just to test */
+section {
+  height: 70vh;
+  background-color: #ccc;
+}
+
+/* button */
+.tooltip-btn {
+  border-bottom: 1px dotted var(--color-tooltip);
+  vertical-align: baseline;
+  cursor: pointer;
+}
+
+.tooltip-btn:hover {
+  border-bottom: 1px solid var(--color-tooltip);
+}
+
+.tooltip-btn:focus {
+  color: var(--color-tooltip);
+  outline: none;
+}
+
+.tooltip-btn:hover > sup:last-of-type {
+  color: var(--color-tooltip);
+}
+
+
+/* tooltip */
+.tooltip-wrapper {
+  position: relative;
+  display: block;
+  position: fixed;
+  bottom: -300px; 
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+  padding: 16px 8ch;
+  background-color: var(--color-tooltip);
+  z-index: 9999;
+  transition: all .3s;
+  opacity: 0;
+}
+
+.tooltip-text {
+  position: relative;
+  font-size: inherit;
+  color: var(--color-tooltip-text);
+}
+
+.tooltip-text::before {
+  content: "**";
+  display: inline;
+  position: absolute;
+  top: -8px;
+  left: -3ch;
+  font-size: inherit;
+  color: var(--color-tooltip-text);
+}
+
+.tooltip-close-btn {
+  display: block;
+  position: absolute;
+  top: -52px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, .7);
+  border: 3px solid var(--color-tooltip);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+.tooltip-close-btn::before,
+.tooltip-close-btn::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70%;
+  height: 2px;
+  background-color: var(--color-tooltip);
+  transition: all .15s;
+}
+
+.tooltip-close-btn::before {
+  transform: rotate(45deg);
+}
+
+.tooltip-close-btn::after {
+  transform: rotate(-45deg);
+}
+
+.tooltip-close-btn:hover::before,
+.tooltip-close-btn:hover::after {
+  transform: rotate(0);
+}
+
+.tooltip-close-btn:focus {
+  background-color: var(--color-tooltip);
+}
+
+.tooltip-close-btn:focus::before,
+.tooltip-close-btn:focus::after {
+  background-color: #fff;
+}
+
+
+/* js classes for tooltips */
+.showTooltip {
+  bottom: 0 !important;
+  opacity: 1 !important;
+}
