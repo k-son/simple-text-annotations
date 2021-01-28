@@ -1,14 +1,15 @@
-:root {
-  --color-tooltip: #4d88fe;
-  --color-tooltip-text: #fff;
-}
-
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+/* button reset */
+button {
+  border: none;
+  background-color: transparent;
 }
 
 body {
@@ -19,19 +20,18 @@ body {
   overflow-x: hidden;
 }
 
-/* button reset */
-button {
-  border: none;
-  background-color: transparent;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-/* section - just to test */
 section {
   height: 70vh;
   background-color: #ccc;
+}
+
+
+/* *** ESSENCE *** */
+
+/* color variables */
+:root {
+  --color-tooltip: #4d88fe;
+  --color-tooltip-text: #fff;
 }
 
 /* button */
@@ -54,7 +54,6 @@ section {
   color: var(--color-tooltip);
 }
 
-
 /* tooltip */
 .tooltip-wrapper {
   position: relative;
@@ -68,7 +67,7 @@ section {
   padding: 16px 8ch;
   background-color: var(--color-tooltip);
   z-index: 9999;
-  transition: all .3s;
+  transition: all .3s ease-in-out;
   opacity: 0;
 }
 
@@ -133,6 +132,7 @@ section {
 
 .tooltip-close-btn:focus {
   background-color: var(--color-tooltip);
+  outline: none;
 }
 
 .tooltip-close-btn:focus::before,

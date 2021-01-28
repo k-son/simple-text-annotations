@@ -10,14 +10,14 @@
 </head>
 <body>
   <section>
-    <button class="tooltip-btn tooltip-btn1" id="tooltip-btb-01" data-tooltip="">Tooltip nr 1 <sup>**</sup></button> 
-    <button class="tooltip-btn" id="tooltip-btb-02" data-tooltip="">Tooltip nr 2 <sup>**</sup></button> 
-    <button class="tooltip-btn" id="tooltip-btb-03" data-tooltip="">Tooltip nr 3 <sup>**</sup></button> 
-    <button class="tooltip-btn" id="tooltip-btb-04" data-tooltip="">Tooltip nr 4 <sup>**</sup></button>
+    <button class="tooltip-btn" id="tooltip-btn-01" aria-describedby="">Tooltip nr 1 <sup>**</sup></button> 
+    <button class="tooltip-btn" id="tooltip-btn-02" aria-describedby="">Tooltip nr 2 <sup>**</sup></button> 
+    <button class="tooltip-btn" id="tooltip-btn-03" aria-describedby="">Tooltip nr 3 <sup>**</sup></button> 
+    <button class="tooltip-btn" id="tooltip-btn-04" aria-describedby="">Tooltip nr 4 <sup>**</sup></button>
   </section>
-  <div class="tooltip-wrapper">
+  <div class="tooltip-wrapper" data-opener="none">
     <button class="tooltip-close-btn" aria-label="close tooltip"></button>
-    <span class="tooltip-text" aria-labelledby="">Na podstawie wewnętrznych testów przeprowadzonych przez producenta. Termin ten odnosi się do zintegrowanego modułu mopa, który może być napędzany w celu wytworzenia drgań o dużej prędkości do 3000 razy/min, tj. do częstotliwości 50 Hz, która mieści się w zakresie „dźwiękowym” (20 do 20 000 Hz).</span>
+    <p class="tooltip-text" id="tooltip-text"></p>
   </div>
 </body>
 </html>
