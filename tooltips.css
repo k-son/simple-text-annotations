@@ -13,16 +13,13 @@ button {
 }
 
 body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 24px;
   box-sizing: border-box;
-  line-height: 1.4;
-  max-width: 1300px;
-  margin: 0 auto;
-  overflow-x: hidden;
 }
 
 section {
-  height: 70vh;
-  background-color: #ccc;
+  padding: 32px;
 }
 
 
@@ -36,23 +33,38 @@ section {
 
 /* button */
 .tooltip-btn {
-  border-bottom: 1px dotted var(--color-tooltip);
+  position: relative;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  margin-right: 1.2ch; /* adjust considering the font */
+  border-bottom: .1ch dotted var(--color-tooltip);
   vertical-align: baseline;
   cursor: pointer;
 }
 
 .tooltip-btn:hover {
-  border-bottom: 1px solid var(--color-tooltip);
+  border-bottom: .1ch solid var(--color-tooltip);
+}
+
+.tooltip-btn:hover::after {
+  color: var(--color-tooltip);
 }
 
 .tooltip-btn:focus {
   color: var(--color-tooltip);
-  outline: none;
 }
 
-.tooltip-btn:hover > sup:last-of-type {
-  color: var(--color-tooltip);
+.tooltip-btn::after {
+  content: "**";
+  display: inline;
+  position: absolute;
+  top: -.3ch; /* adjust considering the font */
+  right: -2ch; /* adjust considering the font */
+  font-size: 70%; /* adjust considering the font */
+  color: inherit;
 }
+
 
 /* tooltip */
 .tooltip-wrapper {
