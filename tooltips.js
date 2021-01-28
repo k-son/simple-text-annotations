@@ -5,19 +5,18 @@ const tooltipParagraph = document.querySelector('.tooltip-text');
 
 /* tooltip texts */
 const tooltipTexts = {
-  text01: "First text",
-  text02: "Second example",
-  text03: "Just another simple text",
-  text04: "Ok, last example"
+  1: "First text",
+  2: "Second example",
+  3: "Just another simple text",
+  4: "Ok, last example"
 }
 
 /* .tooltip-btn events */
 tooltipBtn.forEach(btn => {
   btn.addEventListener('click', function() {
+    const suffix = this.id.replace('tooltip-btn-', '');
+    const text = tooltipTexts[suffix];
     const opener = tooltipWrapper.dataset.opener;
-    const suffix = this.id.slice(-2);
-    const textNum = `text${suffix}`; 
-    const text = tooltipTexts[textNum];
 
     if (opener === 'none') {
       tooltipParagraph.textContent = text;
