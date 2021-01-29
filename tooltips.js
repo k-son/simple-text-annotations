@@ -1,9 +1,10 @@
+/* variables */
 const tooltipBtn = document.querySelectorAll('.tooltip-btn');
 const tooltipWrapper = document.querySelector('.tooltip-wrapper');
 const tooltipCloseBtn = document.querySelector('.tooltip-close-btn');
 const tooltipParagraph = document.querySelector('.tooltip-text');
 
-/* texts for tooltips */
+/* put here your annotations texts */
 const tooltipTexts = {
   1: "First text example.",
   2: "Second example with line break. </br>Annotation launched by Button nr 2 and Button nr 3.",
@@ -16,17 +17,19 @@ tooltipBtn.forEach(btn => {
   btn.addEventListener('click', function() {
     const num = this.dataset.text;
     const text = tooltipTexts[num];
-    /* opener indicates which button launched annotation */
+    /* opener indicates which button has launched the annotation */
     const opener = tooltipWrapper.dataset.opener;
 
     if (opener === 'none') {
       tooltipParagraph.innerHTML = text;
       this.setAttribute('aria-describedby', 'tooltip-text');
+      this.classList.add('tooltip-btn--active');
       tooltipWrapper.dataset.opener = this.id;
       tooltipWrapper.classList.add('showTooltip');
 
     } else if (opener === this.getAttribute('id')) {
       tooltipWrapper.classList.remove('showTooltip');
+      this.classList.remove('tooltip-btn--active');
       setTimeout(() => {
         tooltipParagraph.innerHTML = '';
       }, 300);
@@ -36,6 +39,8 @@ tooltipBtn.forEach(btn => {
     } else if ((opener !== tooltipWrapper.getAttribute('id') && (opener !== 'none'))) {
       tooltipParagraph.innerHTML = text;
       tooltipWrapper.dataset.opener = this.id;
+      tooltipBtn.forEach(btn => btn.classList.remove('tooltip-btn--active'));
+      this.classList.add('tooltip-btn--active');
       tooltipBtn.forEach(btn => btn.setAttribute('aria-describedby', ''));
       this.setAttribute('aria-describedby', 'tooltip-text');
     }
@@ -49,5 +54,6 @@ tooltipCloseBtn.addEventListener('click', function() {
     tooltipParagraph.innerHTML = '';
   }, 300);
   tooltipWrapper.dataset.opener = 'none';
+  tooltipBtn.forEach(btn => btn.classList.remove('tooltip-btn--active'));
   tooltipBtn.forEach(btn => btn.setAttribute('aria-describedby', ''));
 });

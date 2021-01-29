@@ -42,6 +42,7 @@ section {
   border-bottom: .1em dotted var(--color-tooltip);
   vertical-align: baseline;
   cursor: pointer;
+  transition: all .2s;
 }
 
 .tooltip-btn:hover {
@@ -52,7 +53,7 @@ section {
   color: var(--color-tooltip);
 }
 
-.tooltip-btn:focus {
+.tooltip-btn--active {
   color: var(--color-tooltip);
 }
 
