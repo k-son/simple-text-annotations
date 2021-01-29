@@ -13,8 +13,8 @@ const annotationTexts = {
 }
 
 /* .annotation-btn events */
-annotationBtn.forEach(btn => {
-  btn.addEventListener('click', function() {
+annotationBtn.forEach(button => {
+  button.addEventListener('click', function() {
     const num = this.dataset.text;
     const text = annotationTexts[num];
     /* opener indicates which button has launched the annotation */
@@ -23,26 +23,26 @@ annotationBtn.forEach(btn => {
     if (opener === 'none') {
       annotationParagraph.innerHTML = text;
       this.setAttribute('aria-describedby', 'annotation-text');
-      this.classList.add('annotation-btn--active');
       annotationWrapper.dataset.opener = this.id;
       annotationWrapper.classList.add('show-annotation');
+      this.classList.add('annotation-btn--active');
 
     } else if (opener === this.getAttribute('id')) {
       annotationWrapper.classList.remove('show-annotation');
-      this.classList.remove('annotation-btn--active');
       setTimeout(() => {
         annotationParagraph.innerHTML = '';
       }, 300);
-      annotationWrapper.dataset.opener = 'none';
       this.setAttribute('aria-describedby', '');
+      annotationWrapper.dataset.opener = 'none';
+      this.classList.remove('annotation-btn--active');
       
     } else if ((opener !== annotationWrapper.getAttribute('id') && (opener !== 'none'))) {
       annotationParagraph.innerHTML = text;
+      annotationBtn.forEach(btn => btn.setAttribute('aria-describedby', ''));
+      this.setAttribute('aria-describedby', 'annotation-text');
       annotationWrapper.dataset.opener = this.id;
       annotationBtn.forEach(btn => btn.classList.remove('annotation-btn--active'));
       this.classList.add('annotation-btn--active');
-      annotationBtn.forEach(btn => btn.setAttribute('aria-describedby', ''));
-      this.setAttribute('aria-describedby', 'annotation-text');
     }
   })
 })
@@ -53,7 +53,7 @@ annotationCloseBtn.addEventListener('click', function() {
   setTimeout(() => {
     annotationParagraph.innerHTML = '';
   }, 300);
+  annotationBtn.forEach(btn => btn.setAttribute('aria-describedby', ''));
   annotationWrapper.dataset.opener = 'none';
   annotationBtn.forEach(btn => btn.classList.remove('annotation-btn--active'));
-  annotationBtn.forEach(btn => btn.setAttribute('aria-describedby', ''));
 });
