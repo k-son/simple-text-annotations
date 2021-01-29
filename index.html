@@ -10,16 +10,22 @@
 </head>
 <body>
   <section>
-    <button type="button" class="tooltip-btn" id="tooltip-btn-1" aria-describedby="">Button nr 1</button>
+    <!-- sample buttons -->
+    <button type="button" class="tooltip-btn" id="tooltip-btn-1" data-text="1" aria-describedby="">Button nr 1</button>
     </br>
     </br>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos <button type="button" class="tooltip-btn" id="tooltip-btn-2" aria-describedby="">Button nr 2</button> pariatur ad et eveniet, perspiciatis eaque vitae temporibus! Magnam distinctio, unde perspiciatis eaque, natus itaque dignissimos id deleniti, architecto quaerat libero.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos <button type="button" class="tooltip-btn" id="tooltip-btn-2"  data-text="2" aria-describedby="">Button nr 2</button> pariatur ad et eveniet, perspiciatis eaque vitae temporibus! Magnam distinctio, unde perspiciatis eaque, natus itaque dignissimos id deleniti, architecto quaerat libero.</p>
     </br>
-    <button type="button" class="tooltip-btn" id="tooltip-btn-3" aria-describedby="">Button nr 3</button>
+    <button type="button" class="tooltip-btn" id="tooltip-btn-3" data-text="2" aria-describedby="">Button nr 3</button>
     </br>
     </br>
-    <button type="button" class="tooltip-btn" id="tooltip-btn-4" aria-describedby="">Button nr 4</button>
+    <button type="button" class="tooltip-btn" id="tooltip-btn-4" data-text="4" aria-describedby="">Button nr 4</button>
+    </br>
+    </br>
+    <button type="button" class="tooltip-btn" id="tooltip-btn-5" data-text="3" aria-describedby="">Button nr 5</button>
   </section>
+  <!-- annotation -->
+  <!-- you can put it before closing body tag -->
   <div class="tooltip-wrapper" data-opener="none">
     <button type="button" class="tooltip-close-btn" aria-label="close tooltip"></button>
     <p class="tooltip-text" id="tooltip-text"></p>
