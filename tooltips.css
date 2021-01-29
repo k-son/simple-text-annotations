@@ -28,36 +28,36 @@ section {
 
 /* color variables */
 :root {
-  --color-tooltip: #4d88fe;
-  --color-tooltip-text: #fff;
+  --color-annotation: #4d88fe;
+  --color-annotation-text: #fff;
 }
 
 /* button */
-.tooltip-btn {
+.annotation-btn {
   position: relative;
   font-family: inherit;
   font-size: 100%;
   font-weight: inherit;
   margin-right: 1ch; /* adjust considering the font */
-  border-bottom: .1em dotted var(--color-tooltip);
+  border-bottom: .1em dotted var(--color-annotation);
   vertical-align: baseline;
   cursor: pointer;
   transition: all .2s;
 }
 
-.tooltip-btn:hover {
-  border-bottom: .1em solid var(--color-tooltip);
+.annotation-btn:hover {
+  border-bottom: .1em solid var(--color-annotation);
 }
 
-.tooltip-btn:hover::after {
-  color: var(--color-tooltip);
+.annotation-btn:hover::after {
+  color: var(--color-annotation);
 }
 
-.tooltip-btn--active {
-  color: var(--color-tooltip);
+.annotation-btn--active {
+  color: var(--color-annotation);
 }
 
-.tooltip-btn::after {
+.annotation-btn::after {
   content: "**";
   display: inline;
   position: absolute;
@@ -68,8 +68,8 @@ section {
 }
 
 
-/* tooltip */
-.tooltip-wrapper {
+/* annotation */
+.annotation-wrapper {
   position: relative;
   display: block;
   position: fixed;
@@ -79,29 +79,29 @@ section {
   font-size: 14px;
   text-align: left;
   padding: 1.5em 8ch;
-  background-color: var(--color-tooltip);
+  background-color: var(--color-annotation);
   z-index: 9999;
   transition: all .3s ease-in-out;
   opacity: 0;
 }
 
-.tooltip-text {
+.annotation-text {
   position: relative;
   font-size: inherit;
-  color: var(--color-tooltip-text);
+  color: var(--color-annotation-text);
 }
 
-.tooltip-text::before {
+.annotation-text::before {
   content: "**";
   display: inline;
   position: absolute;
   top: -.6em;
   left: -2.4ch;
   font-size: inherit;
-  color: var(--color-tooltip-text);
+  color: var(--color-annotation-text);
 }
 
-.tooltip-close-btn {
+.annotation-close-btn {
   display: block;
   position: absolute;
   top: -52px;
@@ -109,14 +109,14 @@ section {
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, .7);
-  border: 3px solid var(--color-tooltip);
+  border: 3px solid var(--color-annotation);
   border-radius: 50%;
   cursor: pointer;
   transition: background-color .2s;
 }
 
-.tooltip-close-btn::before,
-.tooltip-close-btn::after {
+.annotation-close-btn::before,
+.annotation-close-btn::after {
   display: block;
   content: "";
   position: absolute;
@@ -127,36 +127,36 @@ section {
   margin: auto;
   width: 70%;
   height: 2px;
-  background-color: var(--color-tooltip);
+  background-color: var(--color-annotation);
   transition: all .15s;
 }
 
-.tooltip-close-btn::before {
+.annotation-close-btn::before {
   transform: rotate(45deg);
 }
 
-.tooltip-close-btn::after {
+.annotation-close-btn::after {
   transform: rotate(-45deg);
 }
 
-.tooltip-close-btn:hover::before,
-.tooltip-close-btn:hover::after {
+.annotation-close-btn:hover::before,
+.annotation-close-btn:hover::after {
   transform: rotate(0);
 }
 
-.tooltip-close-btn:focus {
-  background-color: var(--color-tooltip);
+.annotation-close-btn:focus {
+  background-color: var(--color-annotation);
   outline: none;
 }
 
-.tooltip-close-btn:focus::before,
-.tooltip-close-btn:focus::after {
+.annotation-close-btn:focus::before,
+.annotation-close-btn:focus::after {
   background-color: #fff;
 }
 
 
-/* js classes for tooltips */
-.showTooltip {
+/* js classes for annotations */
+.show-annotation {
   bottom: 0 !important;
   opacity: 1 !important;
 }
