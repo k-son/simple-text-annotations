@@ -52,6 +52,12 @@ Text will be inserted dynamically into the *annotation-text*.
 Adjust styles to your taste.
 <br><br>
 
+## Browser Support
+Desktop:&nbsp;&nbsp; Chrome 38+ ✓&nbsp;&nbsp; Firefox 25+ ✓&nbsp;&nbsp; Safari 8+ ✓&nbsp;&nbsp;  Opera 25+ ✓&nbsp;&nbsp; Edge 12+ ✓&nbsp;&nbsp; IE 11+ ✓&nbsp;&nbsp;
+
+Mobile:&nbsp;&nbsp; Chrome Android 38+ ✓&nbsp;&nbsp; Firefox Android 25+ ✓&nbsp;&nbsp; iOS Safari 8+ ✓&nbsp;&nbsp; Opera Android 25+ ✓&nbsp;&nbsp;
+<br><br>
+
 ## License
 This project is available under the [MIT](https://opensource.org/licenses/mit-license.php) license.
 <br><br>
