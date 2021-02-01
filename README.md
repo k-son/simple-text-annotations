@@ -2,21 +2,17 @@
 [![Generic badge](https://img.shields.io/badge/Version-1.1.1-green.svg)](https://shields.io/)
 
 When you need to use annotations on your website.
-&NewLine;
-&NewLine;
+<br><br>
 
 ## Screenshot
 ![Example screenshot](https://github.com/k-son/Tooltips/blob/main/annotations.png)
-&NewLine;
-&NewLine;
+<br><br>
 
 ## Features
 - [x] show up / hide annotation on a button press
 - [x] dynamically inserted texts
 - [x] keyboard accessible
-
-
-
+<br><br>
 
 ## Usage
 #### 1. JavaScript
@@ -32,8 +28,7 @@ When you need to use annotations on your website.
   }
 </script>
 ```
-
-
+<br>
 
 #### 2. HTML
 - add buttons markup
@@ -52,17 +47,15 @@ When you need to use annotations on your website.
   </div>
 ```
 Text will be inserted dynamically into the *annotation-text*.
-
+<br>
 
 #### 3. CSS
 Copy styles. Adjust them to your taste.
-
-
+<br><br>
 
 ## License
 This project is available under the [MIT](https://opensource.org/licenses/mit-license.php) license.
-
-
+<br><br>
 
 ## Contact
  Jacek Jarczok.
