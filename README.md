@@ -2,13 +2,13 @@
 [![Generic badge](https://img.shields.io/badge/Version-1.1.1-green.svg)](https://shields.io/)
 
 When you need to use annotations on your website.
-
-
+&NewLine;
+&NewLine;
 
 ## Screenshot
 ![Example screenshot](https://github.com/k-son/Tooltips/blob/main/annotations.png)
-
-
+&NewLine;
+&NewLine;
 
 ## Features
 - [x] show up / hide annotation on a button press
@@ -37,12 +37,13 @@ When you need to use annotations on your website.
 
 #### 2. HTML
 - add buttons markup
-```html
-  <button type="button" class="annotation-btn" id="your-id" data-text="text1" aria-describedby="">some text to annotate</button>
-```
 - make sure data-text attribute matches *annotationTexts* object keys
 - add id of your choice - will serve as *data-opener* attribute value in *annotation-wrapper*
 - leave *aria-describedby* attribute empty - it will be populated when *annotation-wrapper* opens 
+```html
+  <button type="button" class="annotation-btn" id="your-id" data-text="text1" aria-describedby="">some text to annotate</button>
+```
+
 - add annotation markup, you can place it at the bottom before the closing body tag (it uses fixed positioning)
 ```html
   <div class="annotation-wrapper" data-opener="none">
