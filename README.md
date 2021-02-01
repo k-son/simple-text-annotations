@@ -15,8 +15,9 @@ When you need to use annotations on your website.
 <br><br>
 
 ## Usage
+Add *annotations.js* and *annotations.css* code to your website.
+Check out demo examples in *index.html*.
 #### 1. JavaScript
-- copyt js code
 - place your annotation texts in the *annotationTexts* object
 - name keys as you like
 ```html
@@ -48,7 +49,7 @@ When you need to use annotations on your website.
 Text will be inserted dynamically into the *annotation-text*.
 
 #### 3. CSS
-Copy styles. Adjust them to your taste.
+Adjust styles to your taste.
 <br><br>
 
 ## License
