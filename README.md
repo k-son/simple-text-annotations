@@ -28,7 +28,6 @@ When you need to use annotations on your website.
   }
 </script>
 ```
-<br>
 
 #### 2. HTML
 - add buttons markup
@@ -47,7 +46,6 @@ When you need to use annotations on your website.
   </div>
 ```
 Text will be inserted dynamically into the *annotation-text*.
-<br>
 
 #### 3. CSS
 Copy styles. Adjust them to your taste.
