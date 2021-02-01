@@ -57,4 +57,4 @@ This project is available under the [MIT](https://opensource.org/licenses/mit-li
 <br><br>
 
 ## Contact
- Jacek Jarczok.
+ Jacek Jarczok
