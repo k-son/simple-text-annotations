@@ -4,14 +4,17 @@
 When you need to use annotations on your website.
 
 
+
 ## Screenshot
 ![Example screenshot](https://github.com/k-son/Tooltips/blob/main/annotations.png)
+
 
 
 ## Features
 - [x] show up / hide annotation on a button press
 - [x] dynamically inserted texts
 - [x] keyboard accessible
+
 
 
 
@@ -31,32 +34,34 @@ When you need to use annotations on your website.
 ```
 
 
+
 #### 2. HTML
-Add buttons markup.
+- add buttons markup
 ```html
   <button type="button" class="annotation-btn" id="your-id" data-text="text1" aria-describedby="">some text to annotate</button>
 ```
 - make sure data-text attribute matches *annotationTexts* object keys
 - add id of your choice - will serve as *data-opener* attribute value in *annotation-wrapper*
 - leave *aria-describedby* attribute empty - it will be populated when *annotation-wrapper* opens 
-
+- add annotation markup, you can place it at the bottom before the closing body tag (it uses fixed positioning)
 ```html
   <div class="annotation-wrapper" data-opener="none">
     <button type="button" class="annotation-close-btn" aria-label="close annotation"></button>
     <p class="annotation-text" id="annotation-text"></p>
   </div>
-Text will be inserted dynamically into the *annotation-text* after button press.
 ```
+Text will be inserted dynamically into the *annotation-text*.
 
 
 #### 3. CSS
-Copy and adjust styles to your taste.
+Copy styles. Adjust them to your taste.
 
 
-## Support
 
 ## License
 This project is available under the [MIT](https://opensource.org/licenses/mit-license.php) license.
+
+
 
 ## Contact
  Jacek Jarczok.
