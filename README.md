@@ -5,7 +5,7 @@ When you need to use annotations on your website.
 <br><br>
 
 ## Screenshot
-![Example screenshot](https://github.com/k-son/Tooltips/blob/main/annotations.png)
+![Demo example](https://github.com/k-son/Tooltips/blob/main/annotations.png?raw=true "Demo example")
 <br><br>
 
 ## Features
