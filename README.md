@@ -8,6 +8,10 @@ When you need to use annotations on your website.
 ![Demo example](https://github.com/k-son/Tooltips/blob/main/annotations.png?raw=true "Demo example")
 <br><br>
 
+## Demo
+Go to [Demo](https://k-son.github.io/simple-text-annotations/) page.
+<br><br>
+
 ## Features
 - [x] show up / hide annotation on a button press
 - [x] dynamically inserted texts
@@ -53,9 +57,9 @@ Adjust styles to your taste.
 <br><br>
 
 ## Browser Support
-Desktop:&nbsp;&nbsp; Chrome 38+ ✓&nbsp;&nbsp; Firefox 25+ ✓&nbsp;&nbsp; Safari 8+ ✓&nbsp;&nbsp;  Opera 25+ ✓&nbsp;&nbsp; Edge 12+ ✓&nbsp;&nbsp; IE 11+ ✓&nbsp;&nbsp;
+**Desktop:**&nbsp;&nbsp; Chrome 38+ ✓&nbsp;&nbsp; Firefox 25+ ✓&nbsp;&nbsp; Safari 8+ ✓&nbsp;&nbsp;  Opera 25+ ✓&nbsp;&nbsp; Edge 12+ ✓&nbsp;&nbsp; IE 11+ ✓&nbsp;&nbsp;
 
-Mobile:&nbsp;&nbsp; Chrome Android 38+ ✓&nbsp;&nbsp; Firefox Android 25+ ✓&nbsp;&nbsp; iOS Safari 8+ ✓&nbsp;&nbsp; Opera Android 25+ ✓&nbsp;&nbsp;
+**Mobile:**&nbsp;&nbsp; Chrome Android 38+ ✓&nbsp;&nbsp; Firefox Android 25+ ✓&nbsp;&nbsp; iOS Safari 8+ ✓&nbsp;&nbsp; Opera Android 25+ ✓&nbsp;&nbsp;
 <br><br>
 
 ## License
