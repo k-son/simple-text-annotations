@@ -13,7 +13,7 @@ const annotationTexts = {
 }
 
 /* .annotation-btn events */
-annotationBtn.forEach(button => {
+annotationBtn.forEach(function(button) {
   button.addEventListener('click', function() {
     const num = this.dataset.text;
     const text = annotationTexts[num];
@@ -29,7 +29,7 @@ annotationBtn.forEach(button => {
 
     } else if (opener === this.getAttribute('id')) {
       annotationWrapper.classList.remove('show-annotation');
-      setTimeout(() => {
+      setTimeout(function() {
         annotationParagraph.innerHTML = '';
       }, 300);
       this.setAttribute('aria-describedby', '');
@@ -38,10 +38,10 @@ annotationBtn.forEach(button => {
       
     } else if ((opener !== annotationWrapper.getAttribute('id') && (opener !== 'none'))) {
       annotationParagraph.innerHTML = text;
-      annotationBtn.forEach(btn => btn.setAttribute('aria-describedby', ''));
+      annotationBtn.forEach(function(btn) {btn.setAttribute('aria-describedby', '')});
       this.setAttribute('aria-describedby', 'annotation-text');
       annotationWrapper.dataset.opener = this.id;
-      annotationBtn.forEach(btn => btn.classList.remove('annotation-btn--active'));
+      annotationBtn.forEach(function(btn) {btn.classList.remove('annotation-btn--active')});
       this.classList.add('annotation-btn--active');
     }
   })
@@ -50,10 +50,10 @@ annotationBtn.forEach(button => {
 /* .annotation-close-btn events */
 annotationCloseBtn.addEventListener('click', function() {
   annotationWrapper.classList.remove('show-annotation');
-  setTimeout(() => {
+  setTimeout(function() {
     annotationParagraph.innerHTML = '';
   }, 300);
-  annotationBtn.forEach(btn => btn.setAttribute('aria-describedby', ''));
+  annotationBtn.forEach(function(btn) {btn.setAttribute('aria-describedby', '')});
   annotationWrapper.dataset.opener = 'none';
-  annotationBtn.forEach(btn => btn.classList.remove('annotation-btn--active'));
+  annotationBtn.forEach(function(btn) {btn.classList.remove('annotation-btn--active')});
 });
