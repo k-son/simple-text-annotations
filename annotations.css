@@ -41,6 +41,7 @@ section {
   font-size: 100%;
   font-weight: inherit;
   margin-right: 1ch; /* adjust considering the font */
+  border-bottom: .1em dotted #4d88fe; /* fallback */
   border-bottom: .1em dotted var(--color-annotation);
   vertical-align: baseline;
   cursor: pointer;
@@ -48,14 +49,17 @@ section {
 }
 
 .annotation-btn:hover {
+  border-bottom: .1em solid #4d88fe; /* fallback */
   border-bottom: .1em solid var(--color-annotation);
 }
 
 .annotation-btn:hover::after {
+  color: #4d88fe; /* fallback */
   color: var(--color-annotation);
 }
 
 .annotation-btn--active {
+  color: #4d88fe; /* fallback */
   color: var(--color-annotation);
 }
 
@@ -81,6 +85,7 @@ section {
   font-size: 14px;
   text-align: left;
   padding: 1.5em 8ch;
+  background-color: #4d88fe; /* fallback */
   background-color: var(--color-annotation);
   z-index: 9999;
   transition: all .3s ease-in-out;
@@ -90,6 +95,7 @@ section {
 .annotation-text {
   position: relative;
   font-size: inherit;
+  color: #fff; /* fallback */
   color: var(--color-annotation-text);
 }
 
@@ -100,6 +106,7 @@ section {
   top: -.6em;
   left: -2.4ch;
   font-size: inherit;
+  color: #fff; /* fallback */
   color: var(--color-annotation-text);
 }
 
@@ -111,6 +118,7 @@ section {
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, .7);
+  border: 3px solid #4d88fe; /* fallback */
   border: 3px solid var(--color-annotation);
   border-radius: 50%;
   cursor: pointer;
@@ -129,6 +137,7 @@ section {
   margin: auto;
   width: 70%;
   height: 2px;
+  background-color: #4d88fe; /* fallback */
   background-color: var(--color-annotation);
   transition: all .15s;
 }
@@ -147,6 +156,7 @@ section {
 }
 
 .annotation-close-btn:focus {
+  background-color: #4d88fe; /* fallback */
   background-color: var(--color-annotation);
   outline: none;
 }
