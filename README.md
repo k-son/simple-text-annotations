@@ -32,7 +32,7 @@ Check out demo examples in *index.html*.
 
 #### 2. HTML
 - add buttons markup
-- make sure *data-text* attribute matches *annotationTexts* object keys
+- make sure *data-text* attribute matches *annotationTexts* object key
 - add id of your choice - will serve as *data-opener* attribute value in *annotation-wrapper*
 - leave *aria-describedby* attribute empty - it will be populated when *annotation-wrapper* opens 
 ```html
