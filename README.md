@@ -19,10 +19,10 @@ Go to [Demo](https://k-son.github.io/simple-text-annotations/) page.
 <br><br>
 
 ## Usage
-Add *annotations.js* and *annotations.css* code to your website.
-Check out demo examples in *index.html*.
+Add ```annotations.js``` and ```annotations.css``` code to your website.
+Check out demo examples in ```index.html```.
 #### 1. JavaScript
-- place your annotation texts in the *annotationTexts* object
+- place your annotation texts in the ```annotationTexts``` object
 - name keys as you like
 ```html
 <script>
@@ -36,9 +36,9 @@ Check out demo examples in *index.html*.
 
 #### 2. HTML
 - add buttons markup
-- make sure *data-text* attribute matches *annotationTexts* object key
-- add id of your choice - will serve as *data-opener* attribute value in *annotation-wrapper*
-- leave *aria-describedby* attribute empty - it will be populated when *annotation-wrapper* opens 
+- make sure ```data-text``` attribute matches ```annotationTexts``` object key
+- add id of your choice - will serve as ```data-opener``` attribute value in ```.annotation-wrapper```
+- leave ```aria-describedby``` attribute empty - it will be populated when ```.annotation-wrapper``` opens 
 ```html
   <button type="button" class="annotation-btn" id="your-id" data-text="text1" aria-describedby="">some text to annotate</button>
 ```
@@ -50,7 +50,7 @@ Check out demo examples in *index.html*.
     <p class="annotation-text" id="annotation-text"></p>
   </div>
 ```
-Text will be inserted dynamically into the *annotation-text*.
+Text will be inserted dynamically into the ```.annotation-text```.
 
 #### 3. CSS
 Adjust styles to your taste.
