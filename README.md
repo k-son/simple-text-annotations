@@ -20,6 +20,7 @@ Go to [Demo](https://k-son.github.io/simple-text-annotations/) page.
 
 ## Dependencies
 No dependencies.
+<br><br>
 
 ## Usage
 Add ```annotations.js``` and ```annotations.css``` code to your website.
