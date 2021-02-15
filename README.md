@@ -4,6 +4,12 @@
 When you need to use annotations on your website.
 <br><br>
 
+## Features
+- [x] show up / hide annotation on a button press
+- [x] dynamically inserted texts
+- [x] keyboard accessible
+<br><br>
+
 ## Screenshot
 ![Demo example](https://github.com/k-son/Tooltips/blob/main/annotations.png?raw=true "Demo example")
 <br><br>
@@ -12,11 +18,8 @@ When you need to use annotations on your website.
 Go to [Demo](https://k-son.github.io/simple-text-annotations/) page.
 <br><br>
 
-## Features
-- [x] show up / hide annotation on a button press
-- [x] dynamically inserted texts
-- [x] keyboard accessible
-<br><br>
+## Dependencies
+No dependencies.
 
 ## Usage
 Add ```annotations.js``` and ```annotations.css``` code to your website.
