@@ -18,10 +18,6 @@ When you need to use annotations on your website.
 Go to [Demo](https://k-son.github.io/simple-text-annotations/) page.
 <br><br>
 
-## Dependencies
-No dependencies.
-<br><br>
-
 ## Usage
 Add ```annotations.js``` and ```annotations.css``` code to your website.
 Check out demo examples in ```index.html```.
@@ -66,6 +62,20 @@ Text will be inserted dynamically into the ```.annotation-text```.
 ```
 - set up accordingly fallback colors (for IE)
 - adjust styles to your taste.
+<br><br>
+
+## Dependencies
+No dependencies.
+<br><br>
+
+## Changelog
+### [![Generic badge](https://img.shields.io/badge/Version-1.1.2-green.svg)](https://shields.io/) - 2021-02-17
+#### Changed
+- custom properites names to 
+```html
+--annotation-color-main
+--annotation-color-text
+```
 <br><br>
 
 ## Browser Support
