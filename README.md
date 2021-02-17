@@ -57,7 +57,15 @@ Check out demo examples in ```index.html```.
 Text will be inserted dynamically into the ```.annotation-text```.
 
 #### 3. CSS
-Adjust styles to your taste.
+- add custom properties for annotations background and text color
+```html
+  :root {
+     --color-annotation: #4d88fe;
+     --color-annotation-text: #fff;
+  }
+```
+- set up accordingly fallback colors (for IE)
+- adjust styles to your taste.
 <br><br>
 
 ## Browser Support
