@@ -60,8 +60,8 @@ Text will be inserted dynamically into the ```.annotation-text```.
 - add custom properties for annotations background and text color
 ```html
   :root {
-     --color-annotation: #4d88fe;
-     --color-annotation-text: #fff;
+     --annotation-color-main: #4d88fe;
+     --annotation-color-text: #fff;
   }
 ```
 - set up accordingly fallback colors (for IE)
