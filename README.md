@@ -1,5 +1,5 @@
 # Simple Text Annotations
-[![Generic badge](https://img.shields.io/badge/Version-1.1.1-green.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Version-1.1.2-green.svg)](https://shields.io/)
 
 When you need to use annotations on your website.
 <br><br>
