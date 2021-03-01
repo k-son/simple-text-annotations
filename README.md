@@ -70,9 +70,9 @@ No dependencies.
 
 ## Changelog
 ### [![Generic badge](https://img.shields.io/badge/Version-1.1.3-green.svg)](https://shields.io/) - 2021-03-01
-#### Changed
-- added IIFE
-- addes 'use strict'
+#### Added
+- IIFE
+- "use strict"
 
 ### [![Generic badge](https://img.shields.io/badge/Version-1.1.2-green.svg)](https://shields.io/) - 2021-02-17
 #### Changed
