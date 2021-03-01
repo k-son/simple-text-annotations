@@ -71,7 +71,7 @@ No dependencies.
 ## Changelog
 ### [![Generic badge](https://img.shields.io/badge/Version-1.1.2-green.svg)](https://shields.io/) - 2021-02-17
 #### Changed
-- custom properites names to 
+- custom properties names to 
 ```html
 --annotation-color-main
 --annotation-color-text
