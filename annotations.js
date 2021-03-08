@@ -18,8 +18,8 @@
   /* .annotation-btn events */
   annotationBtn.forEach(function(button) {
     button.addEventListener('click', function() {
-      const num = this.dataset.text;
-      const text = annotationTexts[num];
+      const prop = this.dataset.text;
+      const text = annotationTexts[prop];
       /* opener indicates which button has launched the annotation */
       const opener = annotationWrapper.dataset.opener;
   
