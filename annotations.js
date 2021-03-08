@@ -20,7 +20,7 @@
     button.addEventListener('click', function() {
       const prop = this.dataset.text;
       const text = annotationTexts[prop];
-      /* opener indicates which button has launched the annotation */
+      // opener indicates which button has launched the annotation
       const opener = annotationWrapper.dataset.opener;
   
       if (opener === 'none') {
