@@ -1,0 +1,23 @@
+{
+  "name": "simple_text_annotations",
+  "version": "1.0.4",
+  "description": "[![Generic badge](https://img.shields.io/badge/Version-1.1.4-green.svg)](https://shields.io/)",
+  "main": "annotations.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-son/simple-text-annotations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k-son/simple-text-annotations/issues"
+  },
+  "homepage": "https://github.com/k-son/simple-text-annotations#readme",
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
+}
