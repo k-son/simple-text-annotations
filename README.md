@@ -1,5 +1,5 @@
 # Simple Text Annotations
-[![Generic badge](https://img.shields.io/badge/Version-1.1.3-green.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Version-1.2.0-green.svg)](https://shields.io/)
 
 When you need to use annotations on your website.
 <br><br>
@@ -64,11 +64,12 @@ Text will be inserted dynamically into the ```.annotation-text```.
 - adjust styles to your taste.
 <br><br>
 
-## Dependencies
-No dependencies.
-<br><br>
 
 ## Changelog
+### [![Generic badge](https://img.shields.io/badge/Version-1.2.0-green.svg)](https://shields.io/) - 2021-03-09
+#### Added
+- TypeScript version
+
 ### [![Generic badge](https://img.shields.io/badge/Version-1.1.3-green.svg)](https://shields.io/) - 2021-03-01
 #### Added
 - IIFE
