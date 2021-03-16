@@ -36,15 +36,15 @@ Go to [Demo](https://k-son.github.io/simple-text-annotations/) page.
 <script>
   const annotationTexts = {
     text1: "First text example.",
-    text2: "Second example with line break. </br>Annotation launched by Button nr 2 and Button nr 3.",
-    text3: "List example. </br><ul style='list-style-type: none;'><li>First list item.</li><li>Second list item.</li><li>Third list item.</li>"
+    secondText: "Second example with line break. </br>Annotation launched by Button nr 2 and Button nr 3.",
+    anotherOne: "List example. </br><ul style='list-style-type: none;'><li>First list item.</li><li>Second list item.</li><li>Third list item.</li>"
   }
 </script>
 ```
 #### 2. HTML
-Add to clickable elements you want to annotate:
+Add to clickable elements that you want to annotate:
 - ```.annotation-btn``` class. 
-- ```data-text="key-name"``` attribute. Make sure its value matches corresponding key in ```annotationTexts``` object.
+- ```data-text="key-name"``` attribute. Make sure its **value matches corresponding key** in ```annotationTexts``` object.
 - ```aria-describedby=""``` attribute with no value.
 <br><br>
 
