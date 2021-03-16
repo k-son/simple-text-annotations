@@ -1,7 +1,7 @@
 # Simple Text Annotations
 [![Generic badge](https://img.shields.io/badge/Version-2.0.0-green.svg)](https://shields.io/)
 
-Use this small library when you need to annotate something on your website.
+Use this small library when you need to add annotations to your website.
 <br><br>
 
 ## Features
