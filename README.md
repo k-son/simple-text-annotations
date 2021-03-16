@@ -27,7 +27,6 @@ Go to [Demo](https://k-son.github.io/simple-text-annotations/) page.
     <p class="annotation-text" id="annotation-text"></p>
   </div>
 ```
-<br><br>
 
 ## Usage
 #### 1. JavaScript
@@ -47,7 +46,7 @@ Add to clickable elements you want to annotate:
 - ```.annotation-btn``` class. 
 - ```data-text="key-name"``` attribute. Make sure its value matches corresponding key in ```annotationTexts``` object.
 - ```aria-describedby=""``` attribute with no value.
-
+<br><br>
 
 ## Example
 Check out demo examples in ```index.html```.
