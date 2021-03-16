@@ -1,11 +1,11 @@
 # Simple Text Annotations
-[![Generic badge](https://img.shields.io/badge/Version-1.2.0-green.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Version-2.0.0-green.svg)](https://shields.io/)
 
-When you need to use annotations on your website.
+Use this small library when you need to annotate something on your website.
 <br><br>
 
 ## Features
-- [x] show up / hide annotation on a button press
+- [x] show up / hide annotation on a element click
 - [x] dynamically inserted texts
 - [x] keyboard accessible
 <br><br>
@@ -18,12 +18,22 @@ When you need to use annotations on your website.
 Go to [Demo](https://k-son.github.io/simple-text-annotations/) page.
 <br><br>
 
+## Installation
+- Add ```annotations.js``` or ```annotations.ts``` code to your website.
+- Add styles from ```annotations.css```.
+- Place markup at the bottom of your html file, before closing body tag (it uses fixed positioning).
+```html
+  <div class="annotation-wrapper">
+    <button type="button" class="annotation-close-btn" aria-label="close annotation"></button>
+    <p class="annotation-text" id="annotation-text"></p>
+  </div>
+```
+<br><br>
+
 ## Usage
-Add ```annotations.js``` and ```annotations.css``` code to your website.
-Check out demo examples in ```index.html```.
 #### 1. JavaScript
-- place your annotation texts in the ```annotationTexts``` object
-- name keys as you like
+- Place your annotation texts in the ```annotationTexts``` object.
+- Name keys as you like.
 ```html
 <script>
   const annotationTexts = {
@@ -33,39 +43,23 @@ Check out demo examples in ```index.html```.
   }
 </script>
 ```
-
 #### 2. HTML
-- add buttons markup
-- make sure ```data-text``` attribute matches ```annotationTexts``` object key
-- add id of your choice - will serve as ```data-opener``` attribute value in ```.annotation-wrapper```
-- leave ```aria-describedby``` attribute empty - it will be populated when ```.annotation-wrapper``` opens 
-```html
-  <button type="button" class="annotation-btn" id="your-id" data-text="text1" aria-describedby="">some text to annotate</button>
-```
+Add to clickable elements you want to annotate:
+- ```.annotation-btn``` class. 
+- ```data-text="key-name"``` attribute. Make sure its value matches corresponding key in ```annotationTexts``` object.
+- ```aria-describedby=""``` attribute with no value.
 
-- add annotation markup, you can place it at the bottom before the closing body tag (it uses fixed positioning)
-```html
-  <div class="annotation-wrapper" data-opener="none">
-    <button type="button" class="annotation-close-btn" aria-label="close annotation"></button>
-    <p class="annotation-text" id="annotation-text"></p>
-  </div>
-```
-Text will be inserted dynamically into the ```.annotation-text```.
 
-#### 3. CSS
-- add custom properties
-```html
-  :root {
-     --annotation-color-main: #4d88fe;
-     --annotation-color-text: #fff;
-  }
-```
-- set up accordingly fallback colors (for IE)
-- adjust styles to your taste.
+## Example
+Check out demo examples in ```index.html```.
 <br><br>
 
-
 ## Changelog
+### [![Generic badge](https://img.shields.io/badge/Version-2.0.0-green.svg)](https://shields.io/) - 2021-03-16
+#### Changed
+- New JavaScript and TypeScript logic
+- Id and data-opener attribute removed from the markup
+
 ### [![Generic badge](https://img.shields.io/badge/Version-1.2.0-green.svg)](https://shields.io/) - 2021-03-09
 #### Added
 - TypeScript version
@@ -77,7 +71,7 @@ Text will be inserted dynamically into the ```.annotation-text```.
 
 ### [![Generic badge](https://img.shields.io/badge/Version-1.1.2-green.svg)](https://shields.io/) - 2021-02-17
 #### Changed
-- custom properties names to 
+Custom properties names to 
 ```html
 --annotation-color-main
 --annotation-color-text
