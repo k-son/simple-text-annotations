@@ -7,7 +7,6 @@ Use this small library when you need to annotate something on your website.
 ## Features
 - [x] show up / hide annotation on a element click
 - [x] dynamically inserted texts
-- [x] keyboard accessible
 <br><br>
 
 ## Screenshot
