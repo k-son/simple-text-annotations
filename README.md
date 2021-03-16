@@ -27,7 +27,7 @@ Go to [Demo](https://k-son.github.io/simple-text-annotations/) page.
     <p class="annotation-text" id="annotation-text"></p>
   </div>
 ```
-
+<br><br>
 ## Usage
 #### 1. JavaScript
 - Place your annotation texts in the ```annotationTexts``` object.
